@@ -1,0 +1,7 @@
+Sea.create(name: "Mediterranean",temperature: 68.3,bio: "Friendly, welcoming and warm. Everyone's got a few sirens in their closet, but I'm ready for love.",image_url:"",mood:"Happy-go-lucky",favorite_color:"Blue",scariest_creature:"Poseidon")
+Sea.create(name: "Java",temperature: 43.1,bio: "",image_url:,mood: "Hyper",favorite_color: "Blue",scariest_creature:,has_mermaids:)
+Sea.create(name: "Arctic",temperature: 28.8,bio: "Don't be turned off by my chilling personality, I'm actually not.",image_url:,mood: "Salty",favorite_color: "Blue",scariest_creature: "Kraken",has_mermaids:)
+Sea.create(name: "Dead",temperature: 103.1,bio: "Learn, Love, Code",image_url:,mood: "Sullen",favorite_color: "Blue",scariest_creature: "Ice King",has_mermaids:)
+Sea.create(name: "Caribbean",temperature: 82.5,bio: "",image_url:,mood: "Sunny",favorite_color: "Blue-Green",scariest_creature: "",has_mermaids:)
+Sea.create(name: "Baltic",temperature: 50.1,bio: "I like to go for long walks on the beach.",image_url:,mood: "Stormy",favorite_color: "Blue",scariest_creature:,has_mermaids:)
+Sea.create(name: "Irish",temperature: 59.9,bio: "Aym jes a wee bairn, bu m'hart ees big.",image_url:,mood: "Broodin",favorite_color: "Blue",scariest_creature:,has_mermaids:)
