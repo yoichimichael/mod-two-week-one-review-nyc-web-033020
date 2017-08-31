@@ -1,7 +1,7 @@
 class SeasController < ApplicationController
 
   get "/" do
-
+    
     erb :welcome
   end
 
@@ -19,20 +19,23 @@ class SeasController < ApplicationController
     erb :'show.html'
   end
 
-
-
   post "/seas" do
-
-    redirect_to "/seas"
+    @sea = Sea.new(params)
+    @sea.save
+    redirect to "/seas/#{@sea.id}"
   end
 
   get "/seas/:id/edit" do
-    erb :edit
+    @sea = Sea.find(params[:id])
+
+    erb :'edit.html'
   end
 
   post "/seas/:id" do
-
-    redirect_to "/seas/#{params[:id]}"
+    @sea = Sea.find(params[:id])
+    params[:has_mermaids] ||= false
+    @sea.update(params)
+    redirect to "/seas/#{@sea.id}"
   end
 
 end

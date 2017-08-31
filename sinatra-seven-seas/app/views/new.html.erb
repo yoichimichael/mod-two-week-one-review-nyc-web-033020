@@ -1,10 +1,15 @@
-<form method="POST" action="/seas">
-  <p>Name: <input type="text" name="name"></p>
-  <p>Bio: <input type="text" name="bio"></p>
-  <p>Temperature: <input type="text" name="temperature"></p>
-  <p>Favorite Color: <input type="text" name="favorite_color"></p>
-  <p>Scariest Creature: <input type="text" name="scariest_creature"></p>
-  <p>Mood: <input type="text" name="mood"></p>
-  <p><input type="checkbox" name="has_mermaids"> Has Mermaids</p>
-  <input type="submit">
-</form>
+<div class="container">
+  <form method="POST" action="/seas">
+    <p>Name: <input class="form-control" type="text" name="name"></p>
+    <p>Bio: <input class="form-control" type="text" name="bio"></p>
+    <p>Image URL: <input class="form-control" type="text" name="image_url"></p>
+    <p>Temperature: <input class="form-control" type="text" name="temperature"></p>
+    <p>Favorite Color: <input class="form-control" type="text" name="favorite_color"></p>
+    <p>Scariest Creature: <input class="form-control" type="text" name="scariest_creature"></p>
+    <p>Mood: <input class="form-control" type="text" name="mood"></p>
+    <div class="checkbox">
+      <label><input type="checkbox" name="has_mermaids">Has Mermaids</label>
+    </div>
+    <input class="form-control" type="submit">
+  </form>
+</div>

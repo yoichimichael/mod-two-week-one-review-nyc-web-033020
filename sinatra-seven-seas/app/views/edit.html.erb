@@ -1,0 +1,16 @@
+<a href="/seas/<%=@sea.id%>">Back</a><a href="/seas">All Seas</a>
+<div class="container">
+  <form method="POST" action="/seas/<%=@sea.id%>">
+    <p>Name: <input class="form-control" type="text" value= <%= @sea.name %> name="name"></p>
+    <p>Bio: <input class="form-control" type="text" value= "<%= @sea.bio %>" name="bio"></p>
+    <p>Image URL: <input class="form-control" type="text" value= <%= @sea.image_url %> name="image_url"></p>
+    <p>Temperature: <input class="form-control" type="text" value= <%= @sea.temperature %> name="temperature"></p>
+    <p>Favorite Color: <input class="form-control" type="text" value= <%= @sea.favorite_color %> name="favorite_color"></p>
+    <p>Scariest Creature: <input class="form-control" type="text" value= "<%= @sea.scariest_creature %>" name="scariest_creature"></p>
+    <p>Mood: <input class="form-control" type="text" value= <%= @sea.mood %> name="mood"></p>
+    <div class="checkbox">
+      <input type="checkbox" name="has_mermaids" <%= @sea.has_mermaids ? 'checked' : ''%> />Has Mermaids
+    </div>
+    <input class="form-control" type="submit">
+  </form>
+</div>
