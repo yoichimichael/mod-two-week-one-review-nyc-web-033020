@@ -16,7 +16,7 @@ Don't worry if the styling seems a bit magical right now; your focus will be mai
 ## Goal
 Your job is to recreate the Seven Seas application in Rails. To a user, the Sinatra and Rails apps should be indistinguishable.
 
-Feel free to copy/paste where applicable; the goal is to become aware of the similarities between Rails and Sinatra applications.
+Feel free to copy/paste where applicable; the goal is to become aware of the similarities and differences between Rails and Sinatra applications.
 
 ## Caveats and Tips
 
