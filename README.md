@@ -1,8 +1,8 @@
-## SevenSeas Module Two Week One Review
+## Seven Seas Module Two Week One Review
 
-Seven seas...
-Seven restful routes...
-Seven days of studying web frameworks...
+Seven seas...<br>
+Seven restful routes...<br>
+Seven days of studying web frameworks...<br>
 And now it's time to review with a Sinatra to Rails Challenge!
 
 ## What You Have Now
