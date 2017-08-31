@@ -1,14 +1,18 @@
 
 <div class="container">
-    <h1 class="text-center">7 Seas</h1>
+    <div class="text-center">
+      <h1 class="text-center">7 Seas</h1>
+      <button class="btn btn-info" style="margin: 1em"><a href="/seas/new">Add a Sea</a></button>
+    </div>
+
     <% @seas.each do |sea| %>
-      <div class="col-md-4">
-        <div class="card" style="width: 20rem; height: 40rem">
+      <div class="col-md-4 text-center" style="padding: 1em">
+        <div class="card">
           <img class="card-img-top img-thumbnail" style="height: 15rem"src=<%= sea.image_url %> alt="sea">
           <div class="card-block">
             <h4 class="card-title text-center"><%= sea.name %></h4>
             <p class="card-text" style="height: 10rem"><%= sea.bio %></p>
-            <a href="/seas/<%=sea.id%>" style="width: 100%" class="btn btn-primary">Sea Profile</a>
+            <a href="/seas/<%=sea.id%>" style="width: 100%" class="btn btn-info">Sea Profile</a>
           </div>
         </div>
       </div>

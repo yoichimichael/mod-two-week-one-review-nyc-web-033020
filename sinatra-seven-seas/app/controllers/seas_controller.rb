@@ -1,7 +1,7 @@
 class SeasController < ApplicationController
 
   get "/" do
-    
+
     erb :welcome
   end
 
@@ -36,6 +36,12 @@ class SeasController < ApplicationController
     params[:has_mermaids] ||= false
     @sea.update(params)
     redirect to "/seas/#{@sea.id}"
+  end
+
+  post "/seas/:id/delete" do
+    @sea = Sea.find(params[:id])
+    @sea.destroy
+    redirect to "/seas"
   end
 
 end
