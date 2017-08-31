@@ -9,7 +9,7 @@ And now it's time to review with a Sinatra to Rails challenge!
 
 You've been provided with the Sinatra Seven Seas application. It has full CRUD actions for the resource 'sea' and an MVC framework. Take a few minutes to look through the app and familiarize yourself with the code. Then, fire up shotgun in terminal and see how it looks!
 
-Notice all the fancy styling? That comes from a popular front-end styling framework called <a href="http://getbootstrap.com/">Bootstrap</a>. If you look in <code>'app/views/layout.erb'</code>, you'll see the Bootstrap styling linked. All of the css classes used in the application come from Bootstraps.
+Notice all the fancy styling? That comes from a popular front-end styling framework called <a href="http://getbootstrap.com/">Bootstrap</a>. If you look in <code>'app/views/layout.erb'</code>, you'll see the Bootstrap styling linked. All of the css classes used in the application come from Bootstrap.
 
 Don't worry if the styling seems a bit magical right now; your focus will be mainly on the MVC structure.
 
