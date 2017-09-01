@@ -29,8 +29,10 @@ Feel free to copy/paste where applicable from Sinatra to Rails. While copy-pasta
  - You'll need a database populated with the seven lovely seas from the Sinatra application. Think about what code can be recycled from the Sinatra app's db folder.
  - In Rails, routes are separated from controllers. Because Rails is awesome, the routes.rb file contains a link to the Rails documentation for routes. Since you're building full CRUD for a sea, add all seven RESTful routes to this file.
  - Now, your job is to work out the MVC--Model, View, Controller--part of this app. When making your model, controller, and views, remember that naming conventions are very important in Rails!
+ - You will have to do some research to implement the delete functionality. Check out how the delete is built in Sinatra and think about why the same approach won't work in Rails.  
 
 ## Stuck?
+  - Run <code>rake -T</code> to see your rake tasks
   - Run <code>rails c</code> to check and update your data
   - Run <code>rails s</code> and test your code in the browser
   - Use byebug (it's just like pry) to check your controller actions
