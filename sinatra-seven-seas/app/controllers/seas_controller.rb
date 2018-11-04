@@ -31,14 +31,15 @@ class SeasController < ApplicationController
     erb :'edit.html'
   end
 
-  post "/seas/:id" do
+  patch "/seas/:id" do
     @sea = Sea.find(params[:id])
+    params.delete("_method")
     params[:has_mermaids] ||= false
     @sea.update(params)
     redirect to "/seas/#{@sea.id}"
   end
 
-  post "/seas/:id/delete" do
+  delete "/seas/:id" do
     @sea = Sea.find(params[:id])
     @sea.destroy
     redirect to "/seas"

@@ -1,6 +1,7 @@
 
 <div class="container">
   <form method="POST" action="/seas/<%=@sea.id%>">
+    <input type="hidden" name="_method" value="PATCH" />
     <p>Name: <input class="form-control" type="text" value= "<%= @sea.name %>" name="name"></p>
     <p>Bio: <input class="form-control" type="text" value= "<%= @sea.bio %>" name="bio"></p>
     <p>Image URL: <input class="form-control" type="text" value= "<%= @sea.image_url %>" name="image_url"></p>
@@ -24,7 +25,8 @@
     <div class="col-sm-9">
     </div>
     <div class="col-sm-1">
-    <form action="/seas/<%=@sea.id%>/delete" method="post" style="margin: 0 auto">
+    <form action="/seas/<%=@sea.id%>" method="POST" style="margin: 0 auto">
+      <input type="hidden" name="_method" value="DELETE" />
         <input class="btn btn-danger" type="submit" value="Delete"/>
     </form>
     </div>
