@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get "/seas/new", to: 'seas#new'
 
-  post "/seas/@sea.id" to: 'seas#save'
+  post "/seas", to: 'seas#create'
+
+  get "/seas/:id", to: 'seas#show'
 
 end

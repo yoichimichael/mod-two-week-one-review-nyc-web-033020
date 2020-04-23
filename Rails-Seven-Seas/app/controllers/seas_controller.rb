@@ -11,8 +11,14 @@ class SeasController < ApplicationController
   end
 
   def create
-    @sea.save
-    render "seas/@sea.id"
+    @sea = Sea.create(sea_params)
+    redirect_to "/seas/#{@sea.id}"
+  end
+
+  def show
+    byebug
+    @sea = Sea.find(params[:id])
+    render :show
   end
 
   private
