@@ -1,6 +1,19 @@
 class SeasController < ApplicationController
   #define your controller actions here
+  def index
+    @seas = Sea.all
+    render :index
+  end
 
+  def new
+    @sea = Sea.new
+    render :new
+  end
+
+  def create
+    @sea.save
+    render "seas/@sea.id"
+  end
 
   private
   # In controller actions, use this private method to access sea params from forms.
